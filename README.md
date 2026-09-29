@@ -1,2 +1,2 @@
 # seals.cx
-My FOSS Website
+My Website
