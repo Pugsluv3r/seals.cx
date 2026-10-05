@@ -1,0 +1,104 @@
+:root {
+  --bg: #1e1e2e;
+  --text: #cdd6f4;
+  --panel: #313244;
+  --muted: #a6adc8;
+  --button-bg: #cba6f7;
+  --button-text: #1e1e2e;
+  --border: rgba(203, 166, 247, 0.28);
+}
+
+.contact-wrap {
+  width: min(100%, 40rem);
+  padding: 2.5rem 1.5rem;
+}
+
+.contact-wrap .seal-art {
+  width: 116px;
+  margin-bottom: 1.25rem;
+  filter: drop-shadow(0 12px 24px rgba(203, 166, 247, 0.16));
+}
+
+.contact-wrap .eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--button-bg);
+  font-weight: 700;
+}
+
+.contact-wrap h1 {
+  font-size: 3.25rem;
+  line-height: 1.05;
+}
+
+.contact-wrap .soon {
+  margin: 0.75rem 0 2rem;
+  letter-spacing: 0;
+}
+
+.contact-list {
+  gap: 0.7rem;
+  margin-bottom: 1.75rem;
+}
+
+.contact-list li {
+  padding: 1rem 1.1rem;
+  background: rgba(49, 50, 68, 0.88);
+  border-color: rgba(203, 166, 247, 0.2);
+  box-shadow: 0 8px 24px rgba(17, 17, 27, 0.16);
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.contact-list li:hover {
+  transform: translateX(3px);
+  border-color: rgba(203, 166, 247, 0.55);
+}
+
+.contact-name {
+  font-size: 1rem;
+}
+
+.contact-service {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.contact-list code {
+  padding: 0.45rem 0.65rem;
+  border: 1px solid rgba(203, 166, 247, 0.18);
+  border-radius: 5px;
+  background: #45475a;
+  color: #f5c2e7;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.contact-wrap .socials a {
+  border-color: var(--border);
+  background: rgba(49, 50, 68, 0.72);
+}
+
+.contact-wrap .socials a:hover {
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+
+@media (max-width: 480px) {
+  .contact-wrap {
+    padding: 2rem 1rem;
+  }
+
+  .contact-wrap h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-list li {
+    padding: 0.85rem;
+    gap: 0.2rem 0.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-list li {
+    transition: none;
+  }
+}
